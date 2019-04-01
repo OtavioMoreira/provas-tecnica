@@ -1,0 +1,156 @@
+.menu-wrapper .item a {
+	font-weight: bold;
+	padding: 0 1rem;
+}
+
+.menu-wrapper .item a:hover,
+.menu-wrapper .item a.active {
+	color: #92aa88;
+}
+
+.title-page {
+	margin-top: 0;
+}
+
+.select-filter {
+	width: 12rem;
+}
+
+.list-products {
+	margin-top: 3rem;
+}
+
+.list-products .item {
+	flex-grow: 1;
+  	width: 20%;
+  	padding: 0 2rem;
+  	text-align: center;
+  	margin-bottom: 2rem;
+}
+
+.list-products .item h4 {
+	margin-bottom: .5rem;
+}
+
+.list-products .item h5 {
+	margin-top: 0;
+}
+
+.pagination-default {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.pagination-default li {
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	color: #333333;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.pagination-default .block {
+	background-color: #e2e2e2;
+	color: #d0d0d0;
+}
+
+.pagination-default li:hover {
+	background-color: #b9d2ad;
+	color: white;
+}
+
+.pagination-default li.current {
+	background-color: #92aa88;
+	color: white;
+}
+
+.my-account, .top-mobile, .close-menu {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.list-products .item {
+		width: 45%;
+		padding: 0 .3rem;
+	}
+
+	.title-page {
+		margin-bottom: 0;
+		padding: .5rem 0;
+	}
+
+	.container-fluid {
+	    padding-left: .4rem;
+	    padding-right: .4rem;
+	}
+
+	.container-fluid-lg {
+		padding-left: .5rem;
+	    padding-right: .5rem;	
+	}
+
+	.nav-overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: rgba( 0, 0, 0, .7);
+		z-index: 2;
+		top: 0;
+		left: 0;
+		padding: 0;
+		display: none;
+	}
+
+	.menu-mobile {
+		width: 280px;
+		margin-left: -280px;
+		height: 100%;
+		background-color: white;
+	    align-self: baseline;
+	    transition: all .3s ease;
+	}
+
+	.menu-mobile.open {
+		margin-left: 0;
+	}
+
+	.menu-none {
+		display: none;
+	}
+
+	.menu-wrapper {
+		position: relative;
+		display: block;
+		padding: 1rem 1.3rem;
+		margin-bottom: 1rem;
+	}
+
+	.menu-wrapper li {
+		padding: 1.2rem .2rem;
+		border-bottom: 1px solid #e2ddd2;
+	}
+
+	.my-account {
+		padding: 0 1.5rem;
+		display: block;
+	}
+
+	.top-mobile, .close-menu {
+		display: block;
+	}
+
+	.close-menu {
+		color: #889c80;
+		font-size: 26px;
+		position: absolute;
+		right: -1.7rem;
+		top: 0;
+	}
+
+	.menu-open {
+		padding: .2rem 0;
+		float: left;
+		margin-left: 1rem;
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,106 @@
+@font-face{
+    font-family: 'diodrum';
+    src:
+        url("../fonts/diodrum_regular.woff") format("woff"),
+        url("../fonts/diodrum_regular.woff2") format("woff2"),
+        url("../fonts/diodrum_regular.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'diodrum';
+    src:
+        url("../fonts/diodrum_bold.woff") format("woff"),
+        url("../fonts/diodrum_bold.woff2") format("woff2"),
+        url("../fonts/diodrum_bold.eot?#iefix") format("embedded-opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+header {
+	padding: .5rem 0;
+}
+
+h1,h2,h3,h4,h5,h6,strong,b{font-weight: bold;}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'diodrum';
+    color: #191919;
+    font-size: 14px;
+    margin: 0;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #eeeeee;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: inherit;
+    transition: all .3s ease;
+}
+
+input, select {
+	display: block;
+    padding: .2rem .7rem;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{list-style: none;}
+
+.container-fluid {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.container-fluid-lg {
+	padding-left: 4rem;
+	padding-right: 4rem;	
+}
+
+.caps {text-transform: uppercase;}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-full {
+    width: 100%;
+}
+
+.img-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flex-container {display: flex;}
+.flex-wrap{flex-wrap: wrap;}
+.flex-item-equal {
+	max-width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.flex-horizontal-end {justify-content: flex-end;}
+.flex-horizontal-start {justify-content: flex-start;}
+.flex-horizontal-center {justify-content: center;}
+.flex-vertical-end {align-items: flex-end;}
+.flex-vertical-start {align-items: flex-start;}
+.flex-vertical-center {align-items: center;}
+.flex-self-center {align-self: center;}
